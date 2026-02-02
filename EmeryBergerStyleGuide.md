@@ -7,7 +7,7 @@ Style guidelines distilled from award-winning papers: Hoard (ASPLOS Most Influen
 ## I. Voice and Tone
 
 ### Active Voice, System as Subject
-Use active voice with the system or project name as the subject whenever possible. This centers the narrative on the artifact rather than the authors, giving the work a life of its own.
+Use active voice with the system or project name as the subject whenever possible. This practice centers the narrative on the artifact rather than the authors, giving the work a life of its own.
 
 - **Do:** "DieHard uses randomization and replication to achieve probabilistic memory safety."
 - **Do:** "BLeak leverages the observation that users repeatedly return to the same visual state."
@@ -113,7 +113,7 @@ Use a numbered or bulleted list. Each contribution should reference the section 
 ## IV. Sentence-Level Style
 
 ### System as Subject
-Default to the system name as the grammatical subject. This produces more vivid, concrete prose and avoids the vague "we."
+Default to the system name as the grammatical subject. This convention produces more vivid, concrete prose and avoids the vague "we."
 
 - **Do:** "BLeak then automatically generates a list of leaks found along with their root causes, ranked by return on investment."
 - **Do:** "Exterminator exploits randomization to pinpoint errors with high precision."
@@ -180,7 +180,7 @@ The papers consistently follow this section ordering:
 8. **Conclusion**
 
 ### Related Work Placement
-Related work appears near the end of the paper, not in the introduction. This is deliberate: the reader first understands the paper's contribution, then can appreciate how it differs from prior work. The introduction may briefly note that prior approaches are insufficient, but the detailed comparison belongs in a dedicated late section.
+Related work appears near the end of the paper, not in the introduction. This placement is deliberate: the reader first understands the paper's contribution, then can appreciate how it differs from prior work. The introduction may briefly note that prior approaches are insufficient, but the detailed comparison belongs in a dedicated late section.
 
 ### Motivating Example
 Several papers (BLeak, PlanAlyzer, Coz) open with a concrete motivating example immediately after the introduction. This example:
@@ -252,7 +252,7 @@ Within evaluation sections, use bold **Summary:** callouts to provide a one- or 
 > "**Summary:** Among the accurate memory profilers, Scalene operates with the lowest overhead (median: 1.32x vs. 3.98x (memray) and 2.71x (Fil)), while capturing memory usage over time and producing small log files."
 
 ### Ablation Studies via Progressive Feature Enablement
-When the system has multiple components, demonstrate the contribution of each through progressive enablement. This shows that every feature earns its place.
+When the system has multiple components, demonstrate the contribution of each through progressive enablement. This approach shows that every feature earns its place.
 
 > ChatDBG evaluates five configurations—Default Stack, Enriched Stack, +Take the Wheel, +Targeted Question, and +Dialog—each adding one feature to the previous configuration. This progression shows that enriched stacks help with crashes, "take the wheel" is critical for semantic errors, and multi-step dialog raises the overall success rate from 57% to 85%.
 
@@ -266,7 +266,7 @@ End each research question's analysis with a visually distinct, boxed summary th
 > **RQ2 Summary:** While all features of ChatDBG contribute to its success, the technical innovations enabling it to take the wheel are critical.
 
 ### Report Cost and Resource Consumption
-When a tool consumes external resources (API calls, compute time, money), report the actual cost transparently. This builds trust and helps practitioners judge feasibility.
+When a tool consumes external resources (API calls, compute time, money), report the actual cost transparently. This transparency builds trust and helps practitioners judge feasibility.
 
 > "...a cost of about $0.12 USD under OpenAI's current pricing model." (ChatDBG, Python)
 
@@ -297,7 +297,7 @@ When your tool has real-world adoption, cite it explicitly with concrete numbers
 
 ## VII. Case Studies and Experience Reports
 
-The Scalene paper introduces a powerful structural element: a dedicated section for real-world case studies from external users. This goes beyond standard benchmarks by showing how the tool works in the hands of practitioners, not just its authors.
+The Scalene paper introduces a powerful structural element: a dedicated section for real-world case studies from external users. This element goes beyond standard benchmarks by showing how the tool works in the hands of practitioners, not just its authors.
 
 ### Structure of a Case Study
 Each case study follows a tight narrative:
@@ -311,7 +311,7 @@ Each case study follows a tight narrative:
 > "A developer was seeing suboptimal performance in their code using Pandas. Scalene identified that a list comprehension performing nested indexes into a Pandas dataframe was taking an unexpectedly large amount of time and resulting in a significant amount of copy volume. ... After manually hoisting this outer indexing operation, the developer obtained an 18x speedup. [Features: Copy volume and fine-grained CPU profiling.]"
 
 ### Feature Attribution Tags
-End each case study with a bracketed tag listing the features that were instrumental. This links real-world outcomes back to specific technical contributions.
+End each case study with a bracketed tag listing the features that were instrumental. This tagging links real-world outcomes back to specific technical contributions.
 
 > "[Features: Fine-grained CPU profiling, copy volume.]"
 
@@ -419,7 +419,7 @@ When the paper's primary contribution is a new experimental methodology rather t
 The GC paper's "oracular memory manager" is itself the key contribution—a methodology that enables a comparison previously considered infeasible. Name the methodology and treat it as a system.
 
 ### Bracketing and Bounding Results
-When the true answer lies in a range, use upper and lower bounds to characterize the design space. This is more honest and informative than reporting a single point.
+When the true answer lies in a range, use upper and lower bounds to characterize the design space. This technique is more honest and informative than reporting a single point.
 
 > The GC paper uses two oracles—a *liveness* oracle (ideal, unattainable in practice) and a *reachability* oracle (conservative, implementable)—to bracket the performance of explicit memory management. Results from both oracles bound what any real allocator could achieve.
 
@@ -448,7 +448,7 @@ Whenever possible, note real-world adoption or influence:
 - "DieHard directly influenced the design of the Windows 7 Fault-Tolerant Heap."
 - "Patches for all of these leaks have been submitted to the application developers; at the time of writing, 16 have already been accepted."
 
-This grounds the work in practical significance, not just academic novelty.
+This practice grounds the work in practical significance, not just academic novelty.
 
 ---
 
@@ -465,6 +465,7 @@ This grounds the work in practical significance, not just academic novelty.
 - [ ] Are results quantified with error bars or significance tests?
 - [ ] Is related work placed after the main technical content?
 - [ ] Can every figure caption be understood independently?
+- [ ] Is every "this" followed by a noun (no bare "this" as pronoun)?
 - [ ] Has every filler phrase been eliminated?
 - [ ] Is terminology consistent throughout?
 - [ ] Does every paragraph connect logically to the next?

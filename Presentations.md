@@ -14,7 +14,7 @@ Every slide should be **instantly graspable**. The audience should understand th
 
 - **16:9 widescreen**, always.
 - **One idea per slide.** Never two. If a slide has two ideas, split it.
-- **Progressive builds over multiple slides** rather than animation within a single slide. The same title may appear on 3--5 consecutive slides as content is layered in (e.g., adding arrows, labels, or new elements one at a time). This gives the presenter full control of pacing.
+- **Progressive builds over multiple slides** rather than animation within a single slide. The same title may appear on 3--5 consecutive slides as content is layered in (e.g., adding arrows, labels, or new elements one at a time). This technique gives the presenter full control of pacing.
 
 ---
 
@@ -70,7 +70,7 @@ Every slide should be **instantly graspable**. The audience should understand th
 - **Large colored blocks** for memory pages, objects, processes. Not thin outlines---solid filled rectangles with clear color distinctions.
 - **Arrows should be thick and obvious.** Thin arrows disappear at distance.
 - **Dark backgrounds (dark blue, black)** work well for memory/system diagrams where colored blocks need to pop.
-- **Progressive diagram builds:** Show the empty structure first, then add elements across successive slides. This is critical for teaching---never show a complete complex diagram all at once.
+- **Progressive diagram builds:** Show the empty structure first, then add elements across successive slides. This incremental approach is critical for teaching---never show a complete complex diagram all at once.
 - **Label directly on the diagram**, not in a separate legend. Place labels adjacent to the thing they describe.
 
 ---

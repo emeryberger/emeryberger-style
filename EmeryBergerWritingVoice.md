@@ -52,7 +52,7 @@ A concrete example appears within the first two pages. This example is not merel
 - "For example, instead of tracking individual pixel changes from CSS animations, the system records internal frame counters." (McFly)
 
 ### Late Related Work
-Related work appears near the end, after the reader understands the contribution. This is deliberate: comparison is more meaningful once the reader knows what they are comparing to.
+Related work appears near the end, after the reader understands the contribution. This placement is deliberate: comparison is more meaningful once the reader knows what they are comparing to.
 
 ### Explicit Evaluation Questions
 Evaluation sections open with numbered questions, not vague goals:
@@ -75,7 +75,7 @@ The baseline sentence is short and declarative. Complexity is achieved through a
 When sentences do grow longer, they follow a strict pattern: main clause first, qualifications second.
 
 ### System as Grammatical Subject
-The system name is the subject of most technical sentences. This is not merely stylistic; it produces more vivid, concrete prose:
+The system name is the subject of most technical sentences. This choice is not merely stylistic; it produces more vivid, concrete prose:
 
 - "ChatDBG grants the LLM autonomy to 'take the wheel' and drive debugging by issuing commands."
 - "Scalene leverages how Python delivers signals to extract more granular information."
@@ -191,7 +191,7 @@ When exact answers are unavailable, upper and lower bounds frame the range:
 This bracketing is more informative than a single point estimate.
 
 ### Reproducibility as Rhetorical Move
-Methodology is described in enough detail to reproduce. This is not merely ethical; it is rhetorical. Detailed methodology implies confidence in results.
+Methodology is described in enough detail to reproduce. This level of detail is not merely ethical; it is rhetorical. Detailed methodology implies confidence in results.
 
 ### Negative Results as First-Class Findings
 When prior work is wrong, this is stated directly with evidence:
@@ -211,14 +211,25 @@ A recurring rhetorical move: identify a known limitation of the platform or prio
 
 ## Style Constraints
 
-### A. No Em Dashes
+### A. No Bare "This" as Pronoun
+Use "this" as an adjective, not as a standalone pronoun. Follow "this" with a noun that clarifies what "this" refers to.
+
+- **Not:** "This is critical for performance."
+- **Do:** "This optimization is critical for performance."
+
+- **Not:** "This produces more vivid prose."
+- **Do:** "This convention produces more vivid prose."
+
+A bare "this" forces the reader to look back and resolve the referent. Adding a noun eliminates ambiguity and keeps the reader moving forward.
+
+### B. No Em Dashes
 Use commas, parentheses, or separate sentences instead of em dashes. Em dashes create visual clutter and suggest incomplete thought organization.
 
 - **Not:** "The system works well—in most cases—when memory is constrained."
 - **Do:** "The system works well in most cases when memory is constrained."
 - **Or:** "The system works well (in most cases) when memory is constrained."
 
-### B. Avoid AI-Sounding Scaffolding
+### C. Avoid AI-Sounding Scaffolding
 Eliminate phrases that signal generic structure rather than specific content:
 
 - "In this section, we will explore..."
@@ -231,10 +242,10 @@ Eliminate phrases that signal generic structure rather than specific content:
 
 These phrases add no information and mark the writing as formulaic.
 
-### C. Keep Original Wording
+### D. Keep Original Wording
 When editing or revising, preserve the author's original phrasing wherever it is clear and correct. Resist the urge to "improve" sentences that are already functional. Changes should fix errors or improve clarity, not impose a different voice.
 
-### D. Prefer Definitions and Precise Claims Over Marketing Language
+### E. Prefer Definitions and Precise Claims Over Marketing Language
 Technical writing is not sales copy.
 
 - **Not:** "a revolutionary new approach"
@@ -278,6 +289,7 @@ The voice is that of a working systems researcher who respects the reader's time
 - [ ] Is terminology consistent throughout?
 - [ ] Are sentences front-loaded (key information first)?
 - [ ] Are lists grammatically parallel?
+- [ ] Is every "this" followed by a noun (no bare "this" as pronoun)?
 - [ ] Are em dashes eliminated?
 - [ ] Is AI-sounding scaffolding removed?
 - [ ] Is the original wording preserved where possible?
